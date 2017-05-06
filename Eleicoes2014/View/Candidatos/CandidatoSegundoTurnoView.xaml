@@ -1,0 +1,52 @@
+﻿<phone:PhoneApplicationPage 
+    xmlns:views="clr-namespace:Eleicoes2014.View.Candidatos"
+    x:Class="Eleicoes2014.View.Candidatos.CandidatoSegundoTurnoView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Pivot Control-->
+        <controls:Pivot x:Name="CandidatosPivot"  >
+            <controls:Pivot.HeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" FontSize="30" Margin="10,30,10,0"/>
+                </DataTemplate>
+            </controls:Pivot.HeaderTemplate>
+            <!--Pivot item one-->
+            <controls:PivotItem x:Name="candidatoHeader1" Header="{Binding apelido}" >
+                <Grid>
+                    <views:CandidatoDetalheUserControl x:Name="candidatoDetalheUserControl1View" Margin="0,0,0,10" ></views:CandidatoDetalheUserControl>
+                </Grid>
+            </controls:PivotItem>
+
+            <!--Pivot item two-->
+            <controls:PivotItem x:Name="candidatoHeader2" Header="{Binding apelido}" >
+                <Grid>
+                    <views:CandidatoDetalheUserControl x:Name="candidatoDetalheUserControl2View" Margin="0,0,0,10" ></views:CandidatoDetalheUserControl>
+                </Grid>
+            </controls:PivotItem>
+        </controls:Pivot>
+        <TextBlock HorizontalAlignment="Center" Name="displayProgresso" Text="Carregando..." Height="70" Margin="0,90,0,160" FontSize="18" FontFamily="Segoe WP"  Visibility="Collapsed" />
+        <ProgressBar HorizontalAlignment="Center" Width="440" Height="20" Name="barraProgresso" Margin="0,90,0,240" Visibility="Collapsed" IsIndeterminate="False"></ProgressBar>
+    </Grid>
+
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="atualizarBotao" Text="Atualizar" IconUri="/View/Contents/Images/Icons/dark/appbar.sync.rest.png" Click="atualizarBotao_Click" />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

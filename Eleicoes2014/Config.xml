@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<App ApplicationId="0Z8d46jUNPn0" >
+  <Emails DeveloperEmailTo="gilbertoluis@terra.com.br"></Emails>
+  <ErrorMessages ErrorMessage="Não foi possível realizar a busca. Tente novamente mais tarde."></ErrorMessages>
+</App>

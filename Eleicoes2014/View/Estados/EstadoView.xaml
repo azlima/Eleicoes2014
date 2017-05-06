@@ -1,0 +1,62 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="Eleicoes2014.View.Estados.EstadoView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="696" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="ELEIÇÕES 2014" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" FontSize="40" Margin="12,10,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.Resources>
+                <Style x:Key="estadosListagemEstilo" TargetType="ListBoxItem">
+                    <Setter Property="Margin" Value="30,15,30,15" />
+                </Style>
+            </Grid.Resources>
+            <StackPanel x:Name="EstadosListagemStackPanel" >
+                <ListBox Name="estadosListagem" Height="560" ItemsSource="{Binding}" ItemContainerStyle="{StaticResource estadosListagemEstilo}" Tap="estadosListagem_Tap" >
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <Border BorderBrush="{StaticResource PhoneForegroundBrush}" BorderThickness="1" Height="27" Margin="5" >
+                                    <Image Source="{Binding imagem}" Margin="0" VerticalAlignment="Top" />
+                                </Border>
+                                <TextBlock Text="{Binding descricao}" Margin="15" FontSize="22" />
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Center" Name="displayProgresso" Text="Carregando..." Height="70" Margin="0,110,0,160" FontSize="18" FontFamily="Segoe WP"  Visibility="Collapsed" />
+            <ProgressBar HorizontalAlignment="Center" Width="440" Height="20" Name="barraProgresso" Margin="0,110,0,240" Visibility="Collapsed" IsIndeterminate="False"></ProgressBar>
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="atualizarBotao" Text="Atualizar" IconUri="/View/Contents/Images/Icons/dark/appbar.sync.rest.png" Click="atualizarBotao_Click" />
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

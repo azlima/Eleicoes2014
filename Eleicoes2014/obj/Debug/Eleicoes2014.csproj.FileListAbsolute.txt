@@ -1,0 +1,53 @@
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\Bin\Debug\Eleicoes2014.dll
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\Bin\Debug\Eleicoes2014.pdb
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\Bin\Debug\AppManifest.xaml
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\Bin\Debug\Eleicoes2014.xap
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\App.g.cs
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\MainPage.g.cs
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoDetalheView.g.cs
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoListagemView.g.cs
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoPesquisaView.g.cs
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Cargos\CargoView.g.cs
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Estados\EstadoView.g.cs
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Sobre\SobreView.g.cs
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\Eleicoes2014.g.resources
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\Eleicoes2014.dll
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\Eleicoes2014.pdb
+C:\Dvp\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\XapCacheFile.xml
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\Bin\Debug\Eleicoes2014.dll
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\Bin\Debug\Eleicoes2014.pdb
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\Bin\Debug\AppManifest.xaml
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\Bin\Debug\Eleicoes2014.xap
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\App.g.i.cs
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\MainPage.g.i.cs
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoDetalheView.g.i.cs
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoListagemView.g.i.cs
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoPesquisaView.g.i.cs
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Cargos\CargoView.g.i.cs
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Estados\EstadoView.g.i.cs
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\View\Sobre\SobreView.g.i.cs
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\Eleicoes2014.g.resources
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\Eleicoes2014.dll
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\Eleicoes2014.pdb
+C:\Dvp\Pjt\Testes WP\My Apps\Eleicoes2014\Eleicoes2014\obj\Debug\XapCacheFile.xml
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\Bin\Debug\Eleicoes2014.dll
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\Bin\Debug\Eleicoes2014.pdb
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\Bin\Debug\AppManifest.xaml
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\Bin\Debug\Eleicoes2014.xap
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\Eleicoes2014.csprojResolveAssemblyReference.cache
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\App.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\MainPage.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoDetalheUserControl.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoDetalheView.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoListagemView.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoPesquisaView.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\View\Candidatos\CandidatoSegundoTurnoView.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\View\Cargos\CargoView.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\View\Estados\EstadoView.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\View\Sobre\SobreView.g.cs
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\Eleicoes2014.g.resources
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\Eleicoes2014.dll
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\Eleicoes2014.pdb
+C:\Dvp\My Apps\Eleicoes2014 - 2º Turno\Eleicoes2014\obj\Debug\XapCacheFile.xml

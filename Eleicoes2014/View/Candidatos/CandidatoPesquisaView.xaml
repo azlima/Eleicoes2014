@@ -1,0 +1,42 @@
+﻿<UserControl x:Class="Eleicoes2014.View.Candidatos.CandidatoPesquisaView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot">
+        <Grid.Resources>
+            <Style x:Key="partidosListagemEstilo" TargetType="ListBoxItem">
+                <Setter Property="Margin" Value="10,5" />
+            </Style>
+        </Grid.Resources>
+        <ScrollViewer MaxHeight="1200" VerticalAlignment="Top">
+            <StackPanel x:Name="principalStackPanel" >
+                <TextBlock Text="PESQUISAR CANDIDATOS" Margin="12,0,12,0" />
+                <StackPanel >
+                    <Button Name="partidosBotao" Content="Todos os partidos... " Click="partidosBotao_Click" />
+                    <StackPanel Orientation="Horizontal">
+                        <TextBox Name="numeroOuNomeTextBox" Text="Número ou nome..." Foreground="Gray" GotFocus="numeroOuNomeTextBox_GotFocus" LostFocus="numeroOuNomeTextBox_LostFocus" Width="388" />
+                        <Image x:Name="pesquisarImagem" Height="50" />
+                    </StackPanel>
+                    <ListBox x:Name="partidosListagem" MaxHeight="1800" HorizontalAlignment="Center" ItemsSource="{Binding}" ItemContainerStyle="{StaticResource partidosListagemEstilo}" SelectionChanged="partidosListagem_SelectionChanged" Visibility="Collapsed" >
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="{Binding sigla}" Margin="5" FontSize="20" HorizontalAlignment="Center"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        <TextBlock HorizontalAlignment="Center" Name="displayProgresso" Text="Carregando..." Height="70" Margin="0,40,0,160" FontSize="16" FontFamily="Segoe WP"  Visibility="Collapsed" />
+        <ProgressBar HorizontalAlignment="Center" Width="440" Height="20" Name="barraProgresso" Margin="0,40,0,240" Visibility="Collapsed" IsIndeterminate="False"></ProgressBar>
+    </Grid>
+</UserControl>

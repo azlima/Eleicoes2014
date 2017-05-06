@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Eleicoes2014.View.Cargos.CargoView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot">
+        <Grid.Resources>
+            <Style x:Key="cargosListagemEstilo" TargetType="ListBoxItem">
+                <Setter Property="Margin" Value="30,15,30,15" />
+            </Style>
+        </Grid.Resources>
+        <StackPanel x:Name="CargosListagemStackPanel">
+            <ListBox Name="cargosListagem" Height="600" ItemsSource="{Binding}" ItemContainerStyle="{StaticResource cargosListagemEstilo}" Tap="cargosListagem_Tap" >
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding imagem}" Stretch="UniformToFill" Height="60" Width="60" Margin="2" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding nome}" Margin="40,15,40,15" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Center" Name="displayProgresso" Text="Carregando..." Height="70" Margin="0,190,0,160" FontSize="18" FontFamily="Segoe WP"  Visibility="Collapsed" />
+        <ProgressBar HorizontalAlignment="Center" Width="440" Height="20" Name="barraProgresso" Margin="0,190,0,240" Visibility="Collapsed" IsIndeterminate="False"></ProgressBar>
+    </Grid>
+</UserControl>

@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EEE574D1-0991-4136-8A79-FE51F5D875CE}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Eleicoes2014</RootNamespace>
+    <AssemblyName>Eleicoes2014</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Eleicoes2014.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Eleicoes2014.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Servicemodel" />
+    <Reference Include="System.Servicemodel.Web" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Bem.cs" />
+    <Compile Include="Model\Candidato.cs" />
+    <Compile Include="Model\Candidatura.cs" />
+    <Compile Include="Model\Cargo.cs" />
+    <Compile Include="Model\Doacao.cs" />
+    <Compile Include="Model\Enums\CargoTipo.cs" />
+    <Compile Include="Model\Estado.cs" />
+    <Compile Include="Model\Estatistica.cs" />
+    <Compile Include="Model\Partido.cs" />
+    <Compile Include="Model\ProcessoCandidato.cs" />
+    <Compile Include="Model\Sobre.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ConfigValue.cs" />
+    <Compile Include="ViewModel\CandidatoViewModel.cs" />
+    <Compile Include="ViewModel\CargoViewModel.cs" />
+    <Compile Include="ViewModel\EstadoViewModel.cs" />
+    <Compile Include="ViewModel\PartidoViewModel.cs" />
+    <Compile Include="ViewModel\SobreViewModel.cs" />
+    <Compile Include="View\Candidatos\CandidatoDetalheUserControl.xaml.cs">
+      <DependentUpon>CandidatoDetalheUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Candidatos\CandidatoDetalheView.xaml.cs">
+      <DependentUpon>CandidatoDetalheView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Candidatos\CandidatoListagemView.xaml.cs">
+      <DependentUpon>CandidatoListagemView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Candidatos\CandidatoPesquisaView.xaml.cs">
+      <DependentUpon>CandidatoPesquisaView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Candidatos\CandidatoSegundoTurnoView.xaml.cs">
+      <DependentUpon>CandidatoSegundoTurnoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Cargos\CargoView.xaml.cs">
+      <DependentUpon>CargoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Estados\EstadoView.xaml.cs">
+      <DependentUpon>EstadoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sobre\SobreView.xaml.cs">
+      <DependentUpon>SobreView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Candidatos\CandidatoDetalheUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Candidatos\CandidatoDetalheView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Candidatos\CandidatoListagemView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Candidatos\CandidatoPesquisaView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Candidatos\CandidatoSegundoTurnoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Cargos\CargoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Estados\EstadoView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Sobre\SobreView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config.xml" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="View\Contents\Images\Assets\ApplicationIcon.png" />
+    <Content Include="View\Contents\Images\Assets\Background.png" />
+    <Content Include="View\Contents\Images\Flags\ac.png" />
+    <Content Include="View\Contents\Images\Flags\al.png" />
+    <Content Include="View\Contents\Images\Flags\am.png" />
+    <Content Include="View\Contents\Images\Flags\ap.png" />
+    <Content Include="View\Contents\Images\Flags\ba.png" />
+    <Content Include="View\Contents\Images\Flags\ce.png" />
+    <Content Include="View\Contents\Images\Flags\df.png" />
+    <Content Include="View\Contents\Images\Flags\es.png" />
+    <Content Include="View\Contents\Images\Flags\go.png" />
+    <Content Include="View\Contents\Images\Flags\ma.png" />
+    <Content Include="View\Contents\Images\Flags\mg.png" />
+    <Content Include="View\Contents\Images\Flags\ms.png" />
+    <Content Include="View\Contents\Images\Flags\mt.png" />
+    <Content Include="View\Contents\Images\Flags\pa.png" />
+    <Content Include="View\Contents\Images\Flags\pb.png" />
+    <Content Include="View\Contents\Images\Flags\pe.png" />
+    <Content Include="View\Contents\Images\Flags\pi.png" />
+    <Content Include="View\Contents\Images\Flags\pr.png" />
+    <Content Include="View\Contents\Images\Flags\rj.png" />
+    <Content Include="View\Contents\Images\Flags\rn.png" />
+    <Content Include="View\Contents\Images\Flags\ro.png" />
+    <Content Include="View\Contents\Images\Flags\rr.png" />
+    <Content Include="View\Contents\Images\Flags\rs.png" />
+    <Content Include="View\Contents\Images\Flags\sc.png" />
+    <Content Include="View\Contents\Images\Flags\se.png" />
+    <Content Include="View\Contents\Images\Flags\sp.png" />
+    <Content Include="View\Contents\Images\Flags\to.png" />
+    <Content Include="View\Contents\Images\Icons\Cargos\1.png" />
+    <Content Include="View\Contents\Images\Icons\Cargos\3.png" />
+    <Content Include="View\Contents\Images\Icons\Cargos\5.png" />
+    <Content Include="View\Contents\Images\Icons\Cargos\6.png" />
+    <Content Include="View\Contents\Images\Icons\Cargos\7.png" />
+    <Content Include="View\Contents\Images\Icons\Cargos\8.png" />
+    <Content Include="View\Contents\Images\Icons\dark\appbar.feature.search.rest.png" />
+    <Content Include="View\Contents\Images\Icons\dark\appbar.sync.rest.png" />
+    <Content Include="View\Contents\Images\Icons\light\appbar.feature.search.rest.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>
